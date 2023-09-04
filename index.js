@@ -37,9 +37,8 @@ class SocketIOClient {
 
             that.socket.emit(...args, (...args2) => {
                 clearTimeout(timeoutId)
-            
                 debug(`recevied`,args2)
-                return args2
+                return resolve(args2)
             })
         })
 
@@ -70,7 +69,7 @@ class SocketIOClient {
         }, options)
         this.serverOptions = serverOptions
         this.options = options
-        this.log(serverURL, serverOptions)
+        // this.log(serverURL, serverOptions)
         this.socket = ioclient.connect(serverURL, serverOptions)
 
         this.socket.on("connect", (client) => {
