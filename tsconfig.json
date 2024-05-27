@@ -24,8 +24,6 @@
     "baseUrl": ".",
     "paths": {
       "@root/*": ["./*"],
-      "@models/*": ["./models/*"],
-      "@inc/*": ["./inc/ts/*"]
     }
   },
   "exclude": [

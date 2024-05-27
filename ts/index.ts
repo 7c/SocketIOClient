@@ -17,6 +17,7 @@ interface ServerOptions {
     pingTimeout?: number;
     autoConnect?: boolean;
     agent?: boolean;
+    auth?: any;
     path?: string;
 }
 
@@ -49,7 +50,7 @@ export class SocketIOClient {
         });
     }
 
-    async emitCB(timeout: number, endpoint: string,args: any[]) {
+    async emitCB(timeout: number, endpoint: string,args: any) {
         if (typeof timeout !== `number`) throw new Error(`timeout must be a number`);
         dbg(`emitCB(${timeout}ms,${endpoint})`,args);
         let that = this;
@@ -122,5 +123,3 @@ export class SocketIOClient {
         });
     }
 }
-
-export default SocketIOClient;

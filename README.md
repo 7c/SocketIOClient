@@ -8,4 +8,4 @@ simple socket.io-client wrapper for nodejs with some functionality around it. Ty
 `const SocketIOClient = require('SocketIOClient')`
 
 ## Import TypeScript
-`import { SocketIOClient } from ('SocketIOClient/ts')`
+`import { SocketIOClient } from 'SocketIOClient/ts'`

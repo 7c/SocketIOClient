@@ -103,5 +103,4 @@ class SocketIOClient {
     }
 }
 exports.SocketIOClient = SocketIOClient;
-exports.default = SocketIOClient;
 //# sourceMappingURL=index.js.map
