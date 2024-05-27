@@ -1,6 +1,6 @@
 {
   "name": "SocketIOClient",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,11 @@
   "dependencies": {
     "chalk": "^4",
     "debug": "^4.3.4",
-    "mybase": "^1.0.45",
+    "mybase": "^1.1.22",
     "socket.io-client": "^4.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/socket.io-client": "^3.0.0"
   }
 }

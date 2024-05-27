@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {        
+    "target": "es2017",          
+    "experimentalDecorators": true,                   
+    "emitDecoratorMetadata": true,                    
+    "module": "commonjs",        
+    "moduleResolution" : "Node",
+    "esModuleInterop": true,                  
+    "forceConsistentCasingInFileNames": true,            
+    "strict": true,
+    "noImplicitReturns": true, // Report error when not all code paths in function return a value
+    "noUnusedLocals": true, // Report errors on unused locals
+    // "noUnusedParameters": true, // Report errors on unused parameters
+    "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statement
+    // "noUncheckedIndexedAccess": true, // Include 'undefined' in index signature results
+    "noImplicitAny": true, // Raise error on expressions and declarations with an implied 'any' type
+    "strictNullChecks": true, // Enable strict null checking
+    "strictFunctionTypes": true, // Ensure function parameter types match
+    "strictBindCallApply": true, // Ensure 'bind', 'call', and 'apply' methods match function types
+    "strictPropertyInitialization": true, // Ensure non-undefined class properties are initialized in the constructor
+    "alwaysStrict": true, // Parse in strict mode and emit "use strict" for each source file
+    "sourceMap": true,
+    "skipLibCheck": true,      
+    "baseUrl": ".",
+    "paths": {
+      "@root/*": ["./*"],
+      "@models/*": ["./models/*"],
+      "@inc/*": ["./inc/ts/*"]
+    }
+  },
+  "exclude": [
+    "**/*.test.ts"
+  ]
+}
